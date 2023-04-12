@@ -12,9 +12,20 @@ struct ContentView: View {
         
         
         
-        VStack {
-            Text("iPhone")
-            Text("Hello World")
+        VStack {                //Agrupador (elemento visual capaz de conter outros elementos visuais dentro dele)
+            HStack {
+                Text("iPhone:")
+                Text("Hello Natasha")
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            }
+            
+            HStack {
+                Text("Natasha:")
+                Text("Hey!")
+                    .foregroundColor(.green)
+            }
+            
+            
         }
         
         
